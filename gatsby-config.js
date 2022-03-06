@@ -14,6 +14,13 @@ module.exports = {
   plugins: [
     `gatsby-plugin-image`,
     {
+      resolve: 'gatsby-source-blogger',
+      options: {
+        apiKey: 'AIzaSyBOoKheKHrPCCqMFAG9kj14FDuIC0loLxM',
+        blogId: '8404000664692433863'
+        },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
